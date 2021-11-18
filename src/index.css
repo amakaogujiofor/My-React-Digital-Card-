@@ -86,6 +86,11 @@ h1 {
   font-size: 1.4rem;
   border-radius: 10px;
 }
+.email-link:hover {
+  /* opacity: 0.7; */
+  background-color: var(--clr-accent);
+  color: #77157e;
+}
 
 .footer {
   background-color: #77157e;
@@ -94,6 +99,9 @@ h1 {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0.7em;
+}
+.social:hover {
+  opacity: 0.5;
 }
 
 .social {

@@ -8,8 +8,8 @@ export default function Content() {
         <p>
           I am a frontend developer very interested in building desirable and
           useful products for the web. I'm currently working hard on improving
-          my skills in JavScript, React and Figma. I'm a Lifelong learner always
-          excited to learn something new.
+          my skills in JavaScript, React and Figma. I'm a Lifelong learner
+          always excited to learn something new.
         </p>
       </div>
       <div>

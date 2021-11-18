@@ -1,13 +1,107 @@
 body {
+  background-color: #24242d;
+  color: #fff;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Custom Styles */
+
+:root {
+  /* Font Family */
+  --ff--: "Raleway", sans-serif;
+
+  /* Font Weigth */
+  --fw-bold: 600;
+  --fw-light: 300;
+  --fw-med: 400;
+
+  /* Color */
+  --clr-dark: #080606;
+  --clr-btn: #a738af;
+  --clr-light: #fff;
+  --clr-accent: #f3bf99;
+
+  /* Size */
+  --fs-h1: 1.9rem;
+  --fs-h3: 1rem;
+}
+
+.header {
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #080606;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.hero {
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+  /* border-top-left-radius: 10px; */
+}
+
+/* Typography */
+
+h1 {
+  font-size: var(--fs-h1);
+  margin-bottom: 0;
+}
+
+.role {
+  font-size: var(--fs-h3);
+  color: var(--clr-accent);
+  margin-top: 0.5em;
+  margin-bottom: 0.8em;
+}
+
+.web-link {
+  font-size: 0.8rem;
+  color: var(--clr-light);
+  margin-bottom: 2em;
+}
+
+.email-link {
+  display: block;
+  padding: 0.5em 0;
+  width: 50%;
+  background-color: var(--clr-btn);
+  margin: 0 auto;
+  margin-top: 1em;
+  color: var(--clr-light);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: #77157e;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 1em;
+  margin-bottom: 0;
+  padding: 1em;
+}
+
+.mail-logo {
+  padding-left: 100px;
+}
+
+/* Media Queries */
+@media (min-width: 400px) {
+  .container {
+    max-width: 350px;
+    height: 100vh;
+  }
 }
